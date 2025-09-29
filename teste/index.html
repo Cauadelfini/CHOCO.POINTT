@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choco Point</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">🍫 Choco Pointt</div>
+    <nav>
+      <input type="text" id="search" placeholder="Buscar produtos...">
+      <div id="cart-btn">🛒 (<span id="cart-count">0</span>)</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Seu Doce no Ponto Certo</h1>
+    <p>Trufas, chocolates e presentes especiais para todas as ocasiões</p>
+    <button onclick="scrollToProducts()">Ver produtos</button>
+  </section>
+
+  <main>
+    <h2>Nossos Produtos</h2>
+    <div class="produtos" id="produtos"></div>
+  </main>
+
+  <aside id="carrinho">
+    <h2>Seu Carrinho</h2>
+    <div id="cart-items"></div>
+    <p>Total: <span id="cart-total">R$ 0,00</span></p>
+    <button id="checkout">Finalizar Compra</button>
+    <button id="limpar-carrinho">🗑 Limpar Carrinho</button>
+    <button id="close-cart">Fechar</button>
+  </aside>
+
+  <footer>
+    © 2025 Loja de Doces — SANTOS SP
+  </footer>
+
+  <!-- Notificação -->
+  <div id="notificacao"></div>
+  
+  <a href="https://wa.me/5513974146289" target="_blank" id="suporte-btn" title="Suporte via WhatsApp">💬 Suporte</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
